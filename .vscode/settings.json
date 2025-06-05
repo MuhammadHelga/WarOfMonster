@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "AgeOfBoxes.sln"
+    "dotnet.defaultSolution": "WarOfMonster.sln"
 }
