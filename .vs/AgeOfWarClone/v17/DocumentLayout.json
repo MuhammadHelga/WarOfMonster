@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|c:\\users\\g\u00FCvercin\\desktop\\unity projeler\\ageofwarclone\\assets\\scripts\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\damagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|c:\\users\\g\u00FCvercin\\desktop\\unity projeler\\ageofwarclone\\assets\\scripts\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\unitspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unitspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\enemycoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\assets\\scripts\\playercoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E72291-E68C-A0A9-B61B-48C2685A6CA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PanelController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\PanelController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PanelController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\PanelController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PanelController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T22:57:51.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenuController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\MainMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\MainMenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T22:12:44.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\MovementController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MovementController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\MovementController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:16:57.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DamageController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\DamageController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DamageController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\DamageController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DamageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:00:50.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthSystem.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\HealthSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthSystem.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\HealthSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:00:27.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyCoinController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\EnemyCoinController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyCoinController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\EnemyCoinController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyCoinController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:52:32.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\UnitSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitSpawner.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\UnitSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:51:57.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerCoinController.cs",
+              "DocumentMoniker": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\PlayerCoinController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerCoinController.cs",
+              "ToolTip": "C:\\Users\\g\u00FCvercin\\Desktop\\Unity Projeler\\AgeOfWarClone\\Assets\\Scripts\\PlayerCoinController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerCoinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T13:43:18.867Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
