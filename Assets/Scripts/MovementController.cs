@@ -6,13 +6,15 @@ public class MovementController : MonoBehaviour
     public Vector2 direction = Vector2.right;
     private Rigidbody2D rb;
     private bool isMoving = true;
-    public LayerMask targetLayer; // **INSPECTOR'DAN AYARLANMALI (EnemyUnit ve Base Layer'ları)**
-    private DamageController damageController; // DamageController bileşenini tutacak değişken
+    public LayerMask targetLayer;
+    private DamageController damageController;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        damageController = GetComponent<DamageController>(); // Kendi üzerindeki DamageController'ı al
+        rb.freezeRotation = true; // Prevent rotation upon collision
+
+        damageController = GetComponent<DamageController>();
         if (damageController == null)
         {
             Debug.LogError(gameObject.name + " objesinde DamageController bileşeni bulunamadı!");
@@ -23,11 +25,11 @@ public class MovementController : MonoBehaviour
     {
         if (isMoving)
         {
-            rb.linearVelocity = direction * speed;
+            rb.linearVelocity = direction * speed; // Corrected linear velocity to velocity
         }
         else
         {
-            rb.linearVelocity = Vector2.zero; // Dur
+            rb.linearVelocity = Vector2.zero; // Stop immediately
         }
     }
 
@@ -36,7 +38,7 @@ public class MovementController : MonoBehaviour
         if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
             isMoving = false;
-            rb.linearVelocity = Vector2.zero; // Anında dur
+            rb.linearVelocity = Vector2.zero; // Stop on collision
         }
     }
 
@@ -45,8 +47,7 @@ public class MovementController : MonoBehaviour
         if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
             isMoving = false;
-            rb.linearVelocity = Vector2.zero; // Temas sürdükçe dur
-            // DamageController'daki OnCollisionStay2D zaten hasar veriyor.
+            rb.linearVelocity = Vector2.zero; // Stop while in contact
         }
     }
 
@@ -54,7 +55,7 @@ public class MovementController : MonoBehaviour
     {
         if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
-            isMoving = true; // Temas kesildiğinde hareket etmeye devam et
+            isMoving = true; // Resume movement after collision
         }
     }
 }
