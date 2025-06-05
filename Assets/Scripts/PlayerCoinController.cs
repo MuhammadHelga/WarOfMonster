@@ -1,13 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI; // Hala UI namespace'ine ihtiyacınız olabilir (örneğin Button için)
-using TMPro;       // TextMeshPro namespace'ini ekledik
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerCoinController : MonoBehaviour
 {
-    public int playerCoin = 100; // Başlangıç oyuncu altını
-    public TextMeshProUGUI coinText; // Canvas üzerindeki altın miktarını gösteren TextMeshPro bileşeni
+    public int playerCoin = 100;
+    public TextMeshProUGUI coinText;
 
-    public static PlayerCoinController instance; // Singleton pattern
+    public static PlayerCoinController instance;
 
     void Awake()
     {
@@ -41,7 +41,7 @@ public class PlayerCoinController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Yeterli altın yok!");
+            Debug.Log("Gold tidak mencukupi!");
         }
     }
 
@@ -55,11 +55,11 @@ public class PlayerCoinController : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Altın: " + playerCoin;
+            coinText.text = "Gold: " + playerCoin;
         }
         else
         {
-            Debug.LogError("Player Coin TextMeshPro bileşeni atanmamış!");
+            Debug.LogError("Komponen TextMeshPro Koin Pemain tidak ditetapkan!");
         }
     }
 }

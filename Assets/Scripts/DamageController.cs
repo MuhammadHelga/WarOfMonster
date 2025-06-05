@@ -5,7 +5,7 @@ public class DamageController : MonoBehaviour
     public float damage = 10f;
     public float attackInterval = 1f;
     private float attackTimer = 0f;
-    public LayerMask targetLayer; // **INSPECTOR'DAN AYARLANMALI (EnemyUnit ve Base Layer'ları)**
+    public LayerMask targetLayer;
 
     private void OnCollisionStay2D(Collision2D collision)
     {
