@@ -4,48 +4,45 @@ using UnityEngine.SceneManagement;
 public class PanelController : MonoBehaviour
 {
 
-    public GameObject gameStopPanel; // Inspector'dan atanacak
+    public GameObject gameStopPanel;
 
     void Start()
     {
-        // GameStopPanel'in başlangıçta kapalı olduğundan emin ol
         if (gameStopPanel != null)
         {
             gameStopPanel.SetActive(false);
         }
         else
         {
-            Debug.LogError("GameStopPanel GameObject'i PanelController'a atanmamış!");
+            Debug.LogError("GameStopPanel GameObject tidak ditetapkan ke PanelController!");
         }
     }
 
     public void ReturnToMainMenu()
     {
-        Debug.Log("Ana Menüye Dönülüyor...");
-        Time.timeScale = 1f; // Oyunu devam ettir (eğer durdurulmuşsa)
-        SceneManager.LoadScene(0); // 0 indexli sahneyi yükle
+        Debug.Log("Kembali ke Menu Utama");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 
     public void RestartGame()
     {
-        Debug.Log("Oyun Yeniden Başlatılıyor...");
-        Time.timeScale = 1f; // Oyunu devam ettir (eğer durdurulmuşsa)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Mevcut sahneyi yeniden yükle
+        Debug.Log("Permainan Dimulai Ulang");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ContinueGame()
     {
-        // Bu fonksiyon GameStopPanel'den çağrılacak ve oyunu devam ettirecek.
-        // GameStopPanel'in kendisini kapatma mantığına ihtiyacımız olacak.
         GameObject gameStopPanel = GameObject.Find("GameStopPanel");
         if (gameStopPanel != null)
         {
             gameStopPanel.SetActive(false);
-            Time.timeScale = 1f; // Oyunu devam ettir
+            Time.timeScale = 1f;
         }
         else
         {
-            Debug.LogError("GameStopPanel bulunamadı!");
+            Debug.LogError("GameStopPanel tidak ditemukan!");
         }
     }
 
@@ -55,11 +52,11 @@ public class PanelController : MonoBehaviour
         {
             bool isPanelActive = gameStopPanel.activeSelf;
             gameStopPanel.SetActive(!isPanelActive);
-            Time.timeScale = isPanelActive ? 1f : 0f; // Panel aktifse devam et, değilse durdur
+            Time.timeScale = isPanelActive ? 1f : 0f;
         }
         else
         {
-            Debug.LogError("GameStopPanel PanelController'a atanmamış!");
+            Debug.LogError("GameStopPanel tidak ditugaskan ke PanelController!");
         }
     }
 }

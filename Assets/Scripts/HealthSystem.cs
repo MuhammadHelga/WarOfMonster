@@ -5,7 +5,7 @@ public class HealthSystem : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
     public int goldValueOnDeath = 5;
-    public string baseTag = ""; // Inspector'dan "PlayerBase" veya "EnemyBase" atanmalı
+    public string baseTag = "";
     public static event System.Action OnPlayerBaseDestroyed;
     public static event System.Action OnEnemyBaseDestroyed;
 
@@ -36,22 +36,20 @@ public class HealthSystem : MonoBehaviour
     protected virtual void Die()
     {
         OnDeath?.Invoke();
-
-        // Tag güvenli şekilde kontrol edilir
         string objectTag = gameObject.tag;
 
         if (!string.IsNullOrEmpty(baseTag) && objectTag == baseTag)
         {
             if (baseTag == "PlayerBase")
             {
-                Debug.Log("Oyuncu base'i yıkıldı! Kaybettin Paneli Açılıyor.");
+                Debug.Log("Markas kamu hancur! Panel 'You Lost' muncul.");
                 badOverPanel?.SetActive(true);
                 Time.timeScale = 0f;
                 OnPlayerBaseDestroyed?.Invoke();
             }
             else if (baseTag == "EnemyBase")
             {
-                Debug.Log("Düşman base'i yıkıldı! Zafer Paneli Açılıyor.");
+                Debug.Log("Markas musuh hancur! Panel 'You Win' muncul.");
                 goodOverPanel?.SetActive(true);
                 Time.timeScale = 0f;
                 OnEnemyBaseDestroyed?.Invoke();
@@ -71,7 +69,7 @@ public class HealthSystem : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"{gameObject.name} için geçersiz veya tanımsız tag: '{objectTag}'");
+            Debug.LogWarning($"{gameObject.name} Tag tidak valid atau tidak terdefinisi untuk: '{objectTag}'");
         }
     }
 

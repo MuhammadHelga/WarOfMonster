@@ -30,7 +30,7 @@ public class UnitSpawner : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Zayıf asker butonu atanmamış!");
+            Debug.LogError("Tombol prajurit lemah tidak ditetapkan!");
         }
 
         if (strongSoldierButtonPlayer != null)
@@ -39,7 +39,7 @@ public class UnitSpawner : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Güçlü asker butonu atanmamış!");
+            Debug.LogError("Tombol prajurit kuat tidak ditetapkan!");
         }
     }
 
@@ -62,7 +62,7 @@ public class UnitSpawner : MonoBehaviour
         }
         else
         {
-            Debug.Log("Oyuncu: Yeterli altın yok!");
+            Debug.Log("Pemain: Gold tidak mencukupi!");
             if (weakSoldierButtonPlayer != null) weakSoldierButtonPlayer.interactable = false;
             Invoke("EnableWeakSoldierButton", 1f);
         }
@@ -82,7 +82,7 @@ public class UnitSpawner : MonoBehaviour
         }
         else
         {
-            Debug.Log("Oyuncu: Yeterli altın yok!");
+            Debug.Log("Pemain: Gold tidak mencukupi!");
             if (strongSoldierButtonPlayer != null) strongSoldierButtonPlayer.interactable = false;
             Invoke("EnableStrongSoldierButton", 1f);
         }
@@ -110,7 +110,7 @@ public class UnitSpawner : MonoBehaviour
         }
         else
         {
-            Debug.Log("Düşman: Yeterli altın yok veya rastgele seçim başarısız.");
+            Debug.Log("Musuh: Gold tidak mencukupi atau pemilihan acak Enemies gagal.");
         }
     }
 }

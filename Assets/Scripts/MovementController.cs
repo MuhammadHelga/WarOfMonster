@@ -17,7 +17,7 @@ public class MovementController : MonoBehaviour
         damageController = GetComponent<DamageController>();
         if (damageController == null)
         {
-            Debug.LogError(gameObject.name + " objesinde DamageController bileşeni bulunamadı!");
+            Debug.LogError(gameObject.name + " Komponen DamageController tidak ditemukan dalam objek!");
         }
     }
 
