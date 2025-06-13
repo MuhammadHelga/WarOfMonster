@@ -4,58 +4,68 @@ public class MovementController : MonoBehaviour
 {
     public float speed = 2f;
     public Vector2 direction = Vector2.right;
+    public LayerMask targetLayer;
+
     private Rigidbody2D rb;
     private bool isMoving = true;
-    public LayerMask targetLayer;
     private DamageController damageController;
+    private Animator anim; // **TAMBAHAN**: Variabel untuk Animator
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true; // Prevent rotation upon collision
+        rb.freezeRotation = true;
 
         damageController = GetComponent<DamageController>();
         if (damageController == null)
         {
             Debug.LogError(gameObject.name + " Komponen DamageController tidak ditemukan dalam objek!");
         }
+
+        anim = GetComponent<Animator>(); // **TAMBAHAN**: Mengambil komponen Animator
     }
 
     void FixedUpdate()
     {
+        // **TAMBAHAN**: Atur parameter IsMoving di Animator setiap frame
+        // Ini memastikan animasi selalu sinkron dengan status gerakan.
+        if (anim != null)
+        {
+            anim.SetBool("IsMoving", isMoving);
+        }
+        
         if (isMoving)
         {
-            rb.linearVelocity = direction * speed; // Corrected linear velocity to velocity
+            rb.linearVelocity = direction * speed; // Menggunakan .velocity lebih umum untuk Rigidbody2D
         }
         else
         {
-            rb.linearVelocity = Vector2.zero; // Stop immediately
+            rb.linearVelocity = Vector2.zero;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
+        // Menggunakan bitwise operation untuk mengecek layer
+        if (((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
             isMoving = false;
-            rb.linearVelocity = Vector2.zero; // Stop on collision
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
+        if (((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
-            isMoving = false;
-            rb.linearVelocity = Vector2.zero; // Stop while in contact
+            isMoving = false; // Tetap berhenti selama bersentuhan
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (damageController != null && ((1 << collision.gameObject.layer) & targetLayer) != 0)
+        if (((1 << collision.gameObject.layer) & targetLayer) != 0)
         {
-            isMoving = true; // Resume movement after collision
+            isMoving = true; // Lanjutkan gerakan setelah tidak bersentuhan
         }
     }
 }

@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 58909f87c91c29e4993f56f2aea1a10d
+guid: 3ca3dbf0a57f7c4428b1877a215bf8b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2000677405605406816
-    second: demon_walk_10_0
+      213: -115755800924048315
+    second: WeakAtk_0
   - first:
-      213: 2061034912013297591
-    second: demon_walk_10_1
+      213: -8553409668144544756
+    second: WeakAtk_1
   - first:
-      213: -2138037057077171455
-    second: demon_walk_10_2
+      213: -6959263171417784049
+    second: WeakAtk_2
   - first:
-      213: 6327862627174212142
-    second: demon_walk_10_3
+      213: -3485972341743551839
+    second: WeakAtk_3
+  - first:
+      213: 4052261351007478151
+    second: WeakAtk_4
+  - first:
+      213: -1384801196521743981
+    second: WeakAtk_5
+  - first:
+      213: 4228259886955980668
+    second: WeakAtk_6
+  - first:
+      213: -1927816091202806782
+    second: WeakAtk_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: demon_walk_10_0
+      name: WeakAtk_0
       rect:
         serializedVersion: 2
-        x: 107
+        x: 124
         y: 0
-        width: 75
-        height: 89
+        width: 40
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a75db8ef7a2c34e0800000000000000
-      internalID: -2000677405605406816
+      spriteID: 5443b3d56b0c46ef0800000000000000
+      internalID: -115755800924048315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon_walk_10_1
+      name: WeakAtk_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 87
-        width: 8
-        height: 7
+        x: 409
+        y: 0
+        width: 39
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b72b3825544a9c10800000000000000
-      internalID: 2061034912013297591
+      spriteID: c044ad7893f2c4980800000000000000
+      internalID: -8553409668144544756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon_walk_10_2
+      name: WeakAtk_2
       rect:
         serializedVersion: 2
-        x: 123
-        y: 87
-        width: 10
-        height: 14
+        x: 709
+        y: 0
+        width: 34
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10b2b48df9a2452e0800000000000000
-      internalID: -2138037057077171455
+      spriteID: f014f21740bbb6f90800000000000000
+      internalID: -6959263171417784049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: demon_walk_10_3
+      name: WeakAtk_3
       rect:
         serializedVersion: 2
-        x: 151
-        y: 70
-        width: 27
-        height: 28
+        x: 980
+        y: 0
+        width: 69
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +215,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e226030788511d750800000000000000
-      internalID: 6327862627174212142
+      spriteID: 1aaf989ef965f9fc0800000000000000
+      internalID: -3485972341743551839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeakAtk_4
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 0
+        width: 66
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78168db9a368c3830800000000000000
+      internalID: 4052261351007478151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeakAtk_5
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 0
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39919c416a238cce0800000000000000
+      internalID: -1384801196521743981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeakAtk_6
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 14
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c776b0407fbcdaa30800000000000000
+      internalID: 4228259886955980668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WeakAtk_7
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 0
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c1393aa750f35e0800000000000000
+      internalID: -1927816091202806782
       vertices: []
       indices: 
       edges: []
@@ -223,10 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      demon_walk_10_0: -2000677405605406816
-      demon_walk_10_1: 2061034912013297591
-      demon_walk_10_2: -2138037057077171455
-      demon_walk_10_3: 6327862627174212142
+      WeakAtk_0: -115755800924048315
+      WeakAtk_1: -8553409668144544756
+      WeakAtk_2: -6959263171417784049
+      WeakAtk_3: -3485972341743551839
+      WeakAtk_4: 4052261351007478151
+      WeakAtk_5: -1384801196521743981
+      WeakAtk_6: 4228259886955980668
+      WeakAtk_7: -1927816091202806782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

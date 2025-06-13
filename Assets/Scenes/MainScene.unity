@@ -3811,7 +3811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415.5, y: 173.5}
+  m_AnchoredPosition: {x: -293.5, y: 119.4}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391601154
@@ -4886,7 +4886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -414.6, y: 143.5}
+  m_AnchoredPosition: {x: -293.3, y: 90.1}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895912177
@@ -5182,7 +5182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.4, y: 218.9}
+  m_AnchoredPosition: {x: -165, y: 94}
   m_SizeDelta: {x: 163.5429, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993509198
@@ -5818,6 +5818,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8411703441893788971, guid: a49b01af9f670644799f3624067211cd, type: 3}
+      propertyPath: targetLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5831,6 +5835,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655731748}
     m_Modifications:
+    - target: {fileID: 393987980684297982, guid: 13ec2abd284be844e8c19b3d474074a4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5484266836060445802, guid: e5dcb7dc3b711e94ea7d174625f228f3, type: 3}
     - target: {fileID: 5559902621418592674, guid: 13ec2abd284be844e8c19b3d474074a4, type: 3}
       propertyPath: m_Name
       value: EnemyStrongSoldier
@@ -5875,6 +5883,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8603932391400353254, guid: 13ec2abd284be844e8c19b3d474074a4, type: 3}
+      propertyPath: targetLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5893,9 +5905,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655731748}
     m_Modifications:
+    - target: {fileID: -774718968559447395, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9441b30db1bde2a49a5da440bd6d492b, type: 2}
+    - target: {fileID: 714518491704823099, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: targetLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 1141872260165875811, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
       propertyPath: m_Name
       value: PlayerStrongSoldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085353864344447732, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1605989417970915779, guid: b899d21c49d8d3a42b750412065ddc20, type: 3}
+    - target: {fileID: 5085353864344447732, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908094157887793080, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908094157887793080, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5908094157887793080, guid: 4b68651bf1a4b98418511d77e955fad8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5950,6 +5986,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1655731748}
     m_Modifications:
+    - target: {fileID: 3146852648738642994, guid: 3049e8cf75e7fff4283e686da055c4ab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 130600029345354424, guid: 4fca1aefd82137a47870070e88fe0423, type: 3}
     - target: {fileID: 3302744162526622315, guid: 3049e8cf75e7fff4283e686da055c4ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: -75.69748
@@ -5993,6 +6033,10 @@ PrefabInstance:
     - target: {fileID: 3568726301030565036, guid: 3049e8cf75e7fff4283e686da055c4ab, type: 3}
       propertyPath: m_Name
       value: EnemyWeakSoldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 3593024846458039107, guid: 3049e8cf75e7fff4283e686da055c4ab, type: 3}
+      propertyPath: targetLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

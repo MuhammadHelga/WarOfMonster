@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: e8af4e36810f5544488c74251645cb7b
+guid: e5dcb7dc3b711e94ea7d174625f228f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5293031974318352618
-    second: Crystal_0
+      213: 5484266836060445802
+    second: StrongMonterRun_0
   - first:
-      213: -5474089373579334922
-    second: Crystal_1
+      213: 3326146882561365307
+    second: StrongMonterRun_1
   - first:
-      213: -2744189082622042838
-    second: Crystal_2
+      213: 5195241884830954586
+    second: StrongMonterRun_2
   - first:
-      213: -3617950518936263543
-    second: Crystal_3
+      213: -3867635852446466758
+    second: StrongMonterRun_3
   - first:
-      213: -1533135168565123671
-    second: Crystal_4
+      213: 3932058075283400005
+    second: StrongMonterRun_4
   - first:
-      213: -7731279947068262272
-    second: Crystal_5
+      213: -1109999609062463039
+    second: StrongMonterRun_5
   - first:
-      213: -5536583686763822658
-    second: Crystal_6
+      213: -6825962784166933230
+    second: StrongMonterRun_6
   - first:
-      213: 8715256001499888981
-    second: Crystal_7
+      213: 5715004452949344370
+    second: StrongMonterRun_7
+  - first:
+      213: 8568929030479337984
+    second: StrongMonterRun_8
+  - first:
+      213: 5529191150987022878
+    second: StrongMonterRun_9
+  - first:
+      213: -6263964641318760011
+    second: StrongMonterRun_10
+  - first:
+      213: -2711128443905826395
+    second: StrongMonterRun_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crystal_0
+      name: StrongMonterRun_0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 0
-        width: 42
-        height: 47
+        x: 92
+        y: 15
+        width: 97
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae8a7067980a47940800000000000000
-      internalID: 5293031974318352618
+      spriteID: a6c96d861a70c1c40800000000000000
+      internalID: 5484266836060445802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_1
+      name: StrongMonterRun_1
       rect:
         serializedVersion: 2
-        x: 416
-        y: 2
-        width: 45
-        height: 46
+        x: 383
+        y: 15
+        width: 102
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fa201bb7b02804b0800000000000000
-      internalID: -5474089373579334922
+      spriteID: b35d7dd87f8d82e20800000000000000
+      internalID: 3326146882561365307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_2
+      name: StrongMonterRun_2
       rect:
         serializedVersion: 2
-        x: 708
-        y: 0
-        width: 41
-        height: 47
+        x: 678
+        y: 15
+        width: 103
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2ddec5919eaae9d0800000000000000
-      internalID: -2744189082622042838
+      spriteID: a54749bf7f4391840800000000000000
+      internalID: 5195241884830954586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_3
+      name: StrongMonterRun_3
       rect:
         serializedVersion: 2
-        x: 996
-        y: 0
-        width: 41
-        height: 46
+        x: 966
+        y: 15
+        width: 109
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9842dd7fb257acdc0800000000000000
-      internalID: -3617950518936263543
+      spriteID: a3dfc5e0fa5635ac0800000000000000
+      internalID: -3867635852446466758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_4
+      name: StrongMonterRun_4
       rect:
         serializedVersion: 2
-        x: 1278
-        y: 0
-        width: 47
-        height: 47
+        x: 1255
+        y: 15
+        width: 105
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a56405efa539bae0800000000000000
-      internalID: -1533135168565123671
+      spriteID: 545297d8cf9719630800000000000000
+      internalID: 3932058075283400005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_5
+      name: StrongMonterRun_5
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 0
-        width: 50
-        height: 48
+        x: 1544
+        y: 15
+        width: 104
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08835e7a9d9f4b490800000000000000
-      internalID: -7731279947068262272
+      spriteID: 1c962019c3d7890f0800000000000000
+      internalID: -1109999609062463039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_6
+      name: StrongMonterRun_6
       rect:
         serializedVersion: 2
-        x: 1854
-        y: 0
-        width: 47
-        height: 47
+        x: 1832
+        y: 15
+        width: 105
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb14831987a1a23b0800000000000000
-      internalID: -5536583686763822658
+      spriteID: 21d81b7630f4541a0800000000000000
+      internalID: -6825962784166933230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crystal_7
+      name: StrongMonterRun_7
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 0
-        width: 41
-        height: 46
+        x: 2120
+        y: 15
+        width: 104
+        height: 102
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +315,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55dfdff682fc2f870800000000000000
-      internalID: 8715256001499888981
+      spriteID: 27042d34546cf4f40800000000000000
+      internalID: 5715004452949344370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongMonterRun_8
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 15
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ad0479d83fae670800000000000000
+      internalID: 8568929030479337984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongMonterRun_9
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 15
+        width: 109
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1290d19e02abbc40800000000000000
+      internalID: 5529191150987022878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongMonterRun_10
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 15
+        width: 113
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1969cb85de119a0800000000000000
+      internalID: -6263964641318760011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongMonterRun_11
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 15
+        width: 108
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a129806b03206ad0800000000000000
+      internalID: -2711128443905826395
       vertices: []
       indices: 
       edges: []
@@ -322,15 +422,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Crystal_0: 5293031974318352618
-      Crystal_1: -5474089373579334922
-      Crystal_2: -2744189082622042838
-      Crystal_3: -3617950518936263543
-      Crystal_4: -1533135168565123671
-      Crystal_5: -7731279947068262272
-      Crystal_6: -5536583686763822658
-      Crystal_7: 8715256001499888981
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
