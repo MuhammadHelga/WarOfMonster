@@ -19,8 +19,8 @@ TagManager:
   - UI
   - PlayerUnit
   - EnemyUnit
-  - Base
-  - 
+  - PlayerBase
+  - EnemyBase
   - 
   - 
   - 

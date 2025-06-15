@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI; // Tambahkan ini
 
 public class HealthSystem : MonoBehaviour
 {
@@ -14,9 +15,25 @@ public class HealthSystem : MonoBehaviour
     public GameObject goodOverPanel;
     public GameObject badOverPanel;
 
+    // TAMBAHAN: Variabel untuk Health Bar UI
+    public Slider healthBarSlider; // Jika menggunakan Slider
+    // public Image healthBarImage; // Jika menggunakan Image
+
     void Start()
     {
         currentHealth = maxHealth;
+
+        // TAMBAHAN: Inisialisasi Health Bar UI
+        if (healthBarSlider != null) // Jika menggunakan Slider
+        {
+            healthBarSlider.maxValue = maxHealth;
+            healthBarSlider.value = currentHealth;
+        }
+        // else if (healthBarImage != null) // Jika menggunakan Image
+        // {
+        //     healthBarImage.fillAmount = currentHealth / maxHealth;
+        // }
+
 
         if (goodOverPanel != null) goodOverPanel.SetActive(false);
         if (badOverPanel != null) badOverPanel.SetActive(false);
@@ -26,6 +43,16 @@ public class HealthSystem : MonoBehaviour
     {
         currentHealth -= amount;
         Debug.Log(gameObject.name + " hasar aldı. Mevcut canı: " + currentHealth);
+
+        // TAMBAHAN: Perbarui Health Bar UI
+        if (healthBarSlider != null) // Jika menggunakan Slider
+        {
+            healthBarSlider.value = currentHealth;
+        }
+        // else if (healthBarImage != null) // Jika menggunakan Image
+        // {
+        //     healthBarImage.fillAmount = currentHealth / maxHealth;
+        // }
 
         if (currentHealth <= 0)
         {

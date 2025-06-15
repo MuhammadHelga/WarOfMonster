@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      StrongMonsterAtk_0: 8473646854122414054
+      StrongMonsterAtk_1: 3636323375162744071
+      StrongMonsterAtk_10: 6899791760875414422
+      StrongMonsterAtk_11: 2209650113002939653
+      StrongMonsterAtk_12: 8426455048018977978
+      StrongMonsterAtk_13: 389461031185145285
+      StrongMonsterAtk_14: 3037486026066749052
+      StrongMonsterAtk_15: 2538430092445381278
+      StrongMonsterAtk_16: 157090101029540485
+      StrongMonsterAtk_17: -117837726936045909
+      StrongMonsterAtk_18: 3122386783441208747
+      StrongMonsterAtk_19: -7988338189931448548
+      StrongMonsterAtk_2: -7554102932429348212
+      StrongMonsterAtk_20: 365949558293211167
+      StrongMonsterAtk_21: 1656269983909143793
+      StrongMonsterAtk_3: 2719480884193223246
+      StrongMonsterAtk_4: -6458579357631018564
+      StrongMonsterAtk_5: -715626640182451171
+      StrongMonsterAtk_6: -7309541607169182798
+      StrongMonsterAtk_7: -5892578022842642539
+      StrongMonsterAtk_8: -8036837242049276737
+      StrongMonsterAtk_9: 6880488599721835952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

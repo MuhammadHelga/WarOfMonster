@@ -5,6 +5,7 @@ public class MovementController : MonoBehaviour
     public float speed = 2f;
     public Vector2 direction = Vector2.right;
     public LayerMask targetLayer;
+    public LayerMask baseLayer;
 
     private Rigidbody2D rb;
     private bool isMoving = true;
@@ -45,13 +46,20 @@ public class MovementController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
+{
+    int layerMask = 1 << collision.gameObject.layer;
+
+    if ((layerMask & targetLayer) != 0)
     {
-        // Menggunakan bitwise operation untuk mengecek layer
-        if (((1 << collision.gameObject.layer) & targetLayer) != 0)
-        {
-            isMoving = false;
-        }
+        isMoving = false;
     }
+
+    if ((layerMask & baseLayer) != 0)
+    {
+        direction = -direction; // Membalik arah
+    }
+}
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {
