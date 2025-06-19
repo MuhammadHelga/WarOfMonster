@@ -54,10 +54,10 @@ public class MovementController : MonoBehaviour
         isMoving = false;
     }
 
-    if ((layerMask & baseLayer) != 0)
-    {
-        direction = -direction; // Membalik arah
-    }
+    // if ((layerMask & baseLayer) != 0)
+    // {
+    //     direction = -direction; // Membalik arah
+    // }
 }
 
 
