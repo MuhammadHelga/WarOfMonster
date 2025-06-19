@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyCoinController : MonoBehaviour
 {
-    public int enemyCoin = 50;
+    public int enemyCoin = 20;
     public static EnemyCoinController instance;
 
     void Awake()
@@ -15,6 +16,20 @@ public class EnemyCoinController : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+    }
+
+    void Start()
+    {
+        StartCoroutine(GainCoinEverySecond());
+    }
+
+    private IEnumerator GainCoinEverySecond()
+    {
+        while (true)
+        {
+            GainCoin(3);
+            yield return new WaitForSeconds(5f);
         }
     }
 

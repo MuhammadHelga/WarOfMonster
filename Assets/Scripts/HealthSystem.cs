@@ -41,8 +41,11 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        // Debug.Log($"{gameObject.name} menerima damage: {amount}");
+        Debug.Log($"[DEBUG] {gameObject.name} terkena damage");
+
         currentHealth -= amount;
-        Debug.Log(gameObject.name + " hasar aldı. Mevcut canı: " + currentHealth);
+        Debug.Log(gameObject.name + " diserang. Darah saat ini : " + currentHealth);
 
         // TAMBAHAN: Perbarui Health Bar UI
         if (healthBarSlider != null) // Jika menggunakan Slider
@@ -60,45 +63,51 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    protected virtual void Die()
+    protected void Die()
+{
+    OnDeath?.Invoke();
+    string objectTag = gameObject.tag;
+    Debug.Log($"[DIE] Object: {gameObject.name}, Tag: {objectTag}, baseTag: {baseTag}");
+
+    if (!string.IsNullOrEmpty(baseTag) && objectTag == baseTag)
     {
-        OnDeath?.Invoke();
-        string objectTag = gameObject.tag;
+        Debug.Log("Base logic dipanggil!");
 
-        if (!string.IsNullOrEmpty(baseTag) && objectTag == baseTag)
+        if (baseTag == "PlayerBase")
         {
-            if (baseTag == "PlayerBase")
-            {
-                Debug.Log("Markas kamu hancur! Panel 'You Lost' muncul.");
-                badOverPanel?.SetActive(true);
-                Time.timeScale = 0f;
-                OnPlayerBaseDestroyed?.Invoke();
-            }
-            else if (baseTag == "EnemyBase")
-            {
-                Debug.Log("Markas musuh hancur! Panel 'You Win' muncul.");
-                goodOverPanel?.SetActive(true);
-                Time.timeScale = 0f;
-                OnEnemyBaseDestroyed?.Invoke();
-            }
+            Debug.Log("Markas kamu hancur!");
+            badOverPanel?.SetActive(true);
+            Time.timeScale = 0f;
+            OnPlayerBaseDestroyed?.Invoke();
+        }
+        else if (baseTag == "EnemyBase")
+        {
+            Debug.Log("Markas musuh hancur!");
+            goodOverPanel?.SetActive(true);
+            Time.timeScale = 0f;
+            OnEnemyBaseDestroyed?.Invoke();
+        }
 
-            Destroy(gameObject);
-        }
-        else if (objectTag == "PlayerUnit")
-        {
-            EnemyCoinController.instance?.GainCoin(goldValueOnDeath);
-            Destroy(gameObject);
-        }
-        else if (objectTag == "EnemyUnit")
-        {
-            PlayerCoinController.instance?.GainCoin(goldValueOnDeath);
-            Destroy(gameObject);
-        }
-        else
-        {
-            Debug.LogWarning($"{gameObject.name} Tag tidak valid atau tidak terdefinisi untuk: '{objectTag}'");
-        }
+        Destroy(gameObject);
     }
+    else if (objectTag == "PlayerUnit")
+    {
+        Debug.Log("Unit player mati");
+        EnemyCoinController.instance?.GainCoin(goldValueOnDeath);
+        Destroy(gameObject);
+    }
+    else if (objectTag == "EnemyUnit")
+    {
+        Debug.Log("Unit musuh mati");
+        PlayerCoinController.instance?.GainCoin(goldValueOnDeath);
+        Destroy(gameObject);
+    }
+    else
+    {
+        Debug.LogWarning($"[DIE] Tag tidak cocok atau tidak diketahui: {objectTag}");
+    }
+}
+
 
     public float GetCurrentHealth()
     {

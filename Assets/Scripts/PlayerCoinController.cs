@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PlayerCoinController : MonoBehaviour
 {
@@ -25,6 +26,16 @@ public class PlayerCoinController : MonoBehaviour
     void Start()
     {
         UpdateCoinText();
+        StartCoroutine(GainCoinEverySecond());
+    }
+
+    private IEnumerator GainCoinEverySecond()
+    {
+        while (true)
+        {
+            GainCoin(3);
+            yield return new WaitForSeconds(5f);
+        }
     }
 
     public bool CanAfford(int amount)
